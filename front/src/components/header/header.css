@@ -1,0 +1,174 @@
+#Header{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position:fixed;
+    top: 0px;
+}
+
+#Header .search{
+    margin: 25px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-40%);
+
+}
+
+#Header .search input{
+    background: none;
+    border: none;
+    border-radius: 0 8px 8px 0 ;
+    padding: 6px 10px;
+    font-size: 18px;
+
+    font-family: Roboto;
+    color: #5A5A5A;
+
+    transition: background-color 400ms;
+}
+
+#Header .search input:focus{
+    outline: none;
+}
+
+#Header .search input:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#Header .search span{
+    width: 26px;
+    height: 26px;
+
+    box-sizing: content-box;
+    padding: 5px;
+
+    border-radius: 8px 0 0 8px;
+
+    background-image: url('../../assets/Icon awesome-search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: background-color 400ms;
+
+}
+#Header .search span:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#Header .leftSide{
+
+
+    margin-left: 50px;
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Header .leftSide span{
+    font-size: 55px;
+    font-weight: 700;
+    color: #5A5A5A;
+}
+
+#Header .leftSide span.logomarca{
+    width: 200px;
+    height: 60.3px;
+    display: flex;
+
+    background-image: url('../../assets/Spotify-logo.svg');
+}
+
+
+#Header .rightSide{
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1vw;
+    align-items: center;
+}
+#Header .rightSide .userInfo{
+    margin-right: 12px;
+}
+
+#Header .rightSide .userInfo span{
+    flex: 1;
+    font-size: 16px;
+    color: #5A5A5A;
+    line-height: 24px;
+
+}
+
+#Header .rightSide .userInfo h4{
+    font-size: 16px;
+    color: #5A5A5A;
+    font-weight: normal;
+}
+
+#Header .rightSide .userInfo strong{
+    color: #0CCF4F;
+}
+
+@media(max-width: 1500px){
+    #Header .search input{
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    #Header .search span{
+        background-size: 50%;
+    }
+    #Header .leftSide span{
+        
+        font-size: 40px;
+        font-weight: 700;
+        color: #5A5A5A;
+    }
+    
+    #Header .leftSide span.logomarca{
+    
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+
+    #Header .rightSide .userInfo span{
+        flex: 1;
+        font-size: 12px;
+        color: #5A5A5A;
+        line-height: 20px;
+    
+    }
+    
+    #Header .rightSide .userInfo h4{
+        font-size: 12px;
+
+    }
+    #Header .rightSide img{
+        width: 55px;
+        height: auto;
+    }
+    
+}
+@media(max-width: 900px){
+    #Header .search input{
+        font-size: 12px;
+        padding: 7px 2px;
+    }
+    #Header .search span{
+        background-size: 40%;
+    }
+    #Header .leftSide span{
+        
+        font-size: 30px;
+        font-weight: 700;
+        color: #5A5A5A;
+    }
+    #Header .leftSide span.logomarca{
+    
+        background-image: url();
+    }
+}
